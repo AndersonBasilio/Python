@@ -1,2 +1,2 @@
 # Python
- Repositorio para praticar e estudar Pyhton
+ Repositorio para praticar e estudar Linguagem de Programação Pyhton.
