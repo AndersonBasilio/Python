@@ -26,7 +26,7 @@ print('Decremento')
 contador = 10
 
 while contador >= 0:
-    # ou assim contador += 1
+    # ou assim contador -= 1
     print(contador)
     contador = contador - 1
 print('Acabou!') 
