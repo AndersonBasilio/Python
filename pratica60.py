@@ -1,0 +1,37 @@
+"""
+Escopo de funções em Python
+Escopo significa o local onde aquele código pode atingir.
+Existe o escopo global e local
+O escopo global é o escopo onde todo o código é alcançavel.
+O escopo local é o escopo onde apenas nomes do mesmo local podem ser alcançados.
+
+Código é executado da esquerda para direita de cima para baixo
+Execução do código(CIMA, PARA BAIXO, ESQUERDA PARA DIREITA).
+
+Podemos acessar variaveis do escopo mais acima.
+"""
+
+#Nesse caso nao sera executado de CIMA, PARA BAIXO, ESQUERDA PARA DIREITA
+x = 1
+def escopo(): # Definimos a função
+        global x # Aqui estou falando que x e igual o x de fora ou seja x = 1
+        x = 10 #Esse x pode ser acessado, porque esta dentro da função escopo.
+
+        def outra_funcao():# So fazer alguma coisa com y dentro da função outra_funcao.
+            global x # Aqui estou falando que x e igual o x de fora ou seja x = 1
+            y = 2# Não posso acessar ess valor na função escopo
+            x = 11# Este x e da função outra_função
+            print(x, y)
+        outra_funcao()
+        print(x)
+
+print(x)# Tudo que eu defino estive fora da função nao consigo acessar de fora da função.
+escopo()# Mandamos executar a função, depois executa o que esta na função
+print(x)
+
+x = 30 #Definindo o x antes da da função posso usa-lo depois dará um erro "NameError: name 'x' is not defined"
+
+#def testando_escopo():
+    #print(x)
+
+#testando_escopo()
