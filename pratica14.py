@@ -13,7 +13,11 @@ if nome and idade:
         print(f'Seu nome tem espaço.')
     else:
         print('Seu nome não tem espaços.')
-    print(f'Seu nome tem {len(nome)} letras.')
+    if ' ' in nome:
+        nome = nome.replace(' ', '')
+        print(f'Seu nome tem {len(nome)} letras.')
+    else:
+        print(f'Seu nome tem {len(nome)} letras.')
     print(f'A primeira letra do seu nome é {nome[:1]}')
     print(f'A ultima letra do seu nome é {nome[-1]}')
     print(f'Sua idade é {idade}')
