@@ -5,7 +5,7 @@ Existe o escopo global e local
 O escopo global é o escopo onde todo o código é alcançavel.
 O escopo local é o escopo onde apenas nomes do mesmo local podem ser alcançados.
 
-Código é executado da esquerda para direita de cima para baixo
+O Código é executado de cima para baixo, da esquerda para direita
 Execução do código(CIMA, PARA BAIXO, ESQUERDA PARA DIREITA).
 
 Podemos acessar variaveis do escopo mais acima.
