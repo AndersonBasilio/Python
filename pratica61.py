@@ -2,7 +2,7 @@
 Retorno das funções (return)
 return -> Sempre que executamos determinada função sempre retornará uma determiado valor.
 None -> Significa um não valor.
-return sé tem em somente metodos e função tem return também indica que ira parar essa funçao.
+return só tem em somente métodos e função tem return também indica que irá parar a funçao.
 """
 
 #def soma(x, y):
