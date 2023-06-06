@@ -18,9 +18,9 @@ def escopo(): # Definimos a função
         x = 10 #Esse x pode ser acessado, porque esta dentro da função escopo.
 
         def outra_funcao():# So fazer alguma coisa com y dentro da função outra_funcao.
-            global x # Aqui estou falando que x e igual o x de fora ou seja x = 1
-            y = 2# Não posso acessar ess valor na função escopo
-            x = 11# Este x e da função outra_função
+            global x # Aqui estamos falando que x é igual o x de fora ou seja x = 1
+            y = 2# Não posso acessar esse valor na função escopo
+            x = 11# Este x é da função outra_função
             print(x, y)
         outra_funcao()
         print(x)
