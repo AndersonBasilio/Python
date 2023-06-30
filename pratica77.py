@@ -2,15 +2,15 @@ def executa(funcao, *args):
     return funcao(*args)
 
 
-def soma(x, y):
-    return x + y
+#def soma(x, y):
+#    return x + y
 
-def cria_multiplicador(multiplicador):
-    def multiplica(numero):
-        return numero * multiplicador
-    return multiplica
+#def cria_multiplicador(multiplicador):
+#    def multiplica(numero):
+#        return numero * multiplicador
+#    return multiplica
 
-duplica = cria_multiplicador(2)
+#duplica = cria_multiplicador(2)
 
 #print(duplica(2))
 
