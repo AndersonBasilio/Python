@@ -1,16 +1,16 @@
 # Empacotamento e Desempacotamento de Dicionários
 a, b = 1, 2
 a, b = b, a
-#print(a, b)
+# print(a, b)
 
-#pessoas = {
+# pessoas = {
 #    'Nome:': 'Anderson',
 #    'Sobrenome:': 'Basilio',
-#}
+# }
 
-#(a1, a2), (b1, b2) = pessoas.items()
-#print(a1, a2)
-#print(b1, b2)
+# (a1, a2), (b1, b2) = pessoas.items()
+# print(a1, a2)
+# print(b1, b2)
 
 pessoas = {
     'Nome:': 'Anderson',
@@ -23,7 +23,7 @@ dados_pessoas = {
 }
 
 dados_completos = {**pessoas, **dados_pessoas}
-#print('\n', dados_completos, '\n')
+# print('\n', dados_completos, '\n')
 
 # args e Kwargs
 # args(já vimos)
@@ -34,8 +34,8 @@ def mostra_argumentos_nomeados(*args, **kwargs):
     for chave, valor in kwargs.items():
         print(chave, valor)
 
-#mostra_argumentos_nomeados('Anderson', nome='Joana', sobrenome='Souza')
-#mostra_argumentos_nomeados(**dados_completos)
+# mostra_argumentos_nomeados('Anderson', nome='Joana', sobrenome='Souza')
+# mostra_argumentos_nomeados(**dados_completos)
 
 configuracoes = {
     'arg1' : 1,
